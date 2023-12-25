@@ -1,0 +1,13 @@
+{
+  "name": "socket-chat",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "type": "commonjs",
+  "dependencies": {
+    "@socket.io/cluster-adapter": "^0.2.2",
+    "date-and-time": "^3.0.3",
+    "socket.io": "^4.7.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.6"
+  }
+}

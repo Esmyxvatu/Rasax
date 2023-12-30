@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rasax - Report</title>
+    <link rel="stylesheet" href="css/report/light.css" id="theme">
+    <link rel="icon" type="image/png" href="img/triangle.png" />
+  </head>
+<body class="light" >
+    <form id="settings">
+      <button id="return"><img src="img/retour.png" width="24" height="24"></button>
+      <h1>Rasax - Report</h1>
+      <button id="dark"><img src="img/lune.png" width="24" height="24"></button>
+    </form>
+    <form id="reportPlace" >
+        <select id="selector">
+            <option value="1">Report User</option>
+            <option value="2">Report Message</option>
+            <option value="3">Report Bug</option>
+            <option value="4">Report Other</option>
+        </select>
+    </form>
+    <form id="reportEnter">
+        <input id="reportName" placeholder="Enter username to report">
+        <input id="reportReason" placeholder="Enter reason of report">
+        <button id="reportButton">Report</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/report.js"></script>
+</body>
+</html>

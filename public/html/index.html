@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rasax - Global Chat</title>
+    <link rel="stylesheet" href="css/global/light.css" id="theme">
+
+    <!-- On met une icone dans le navigateur -->
+    <link rel="icon" type="image/png" href="img/triangle.png" />
+  </head>
+  <body class="light">
+    <ul id="messages"></ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" type="text" placeholder="Type a message" /><button><img src="img/send.png" width="24" height="24"></button><button id="settings-button"><img src="img/lune.png" width="24" height="24"></button>
+    </form>
+    <form id="settings">
+      <button id="group"><img src="img/utilisateurs-alt.png" width="24" height="24"></button>
+      <button id="mp"><img src="img/utilisateur.png" width="24" height="24"></button>
+      <h1>Rasax</h1>
+      <button id="report"><img src="img/report.png" width="24" height="24"></button>
+      <button id="disconnect-button"><img src="img/sortir.png" width="24" height="24"></button>
+    </form>
+
+    <div id="menubar" class="hidden">
+      <select id="menuDeroulant">
+        <option disabled selected>Choose an option</option>
+        <option value=1>Report Message</option>
+        <option value=2>Report User</option>
+        <option value=3>Copy message</option>
+        <option value=4>Respond</option>
+      </select>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/global.js"></script>
+
+  </body>
+</html>

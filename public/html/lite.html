@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rasax - Lite</title>
+    <link rel="stylesheet" href="css/lite/light.css" id="theme">
+  </head>
+  <body class="light">
+    <ul id="messages"></ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" type="text" placeholder="Type a message" /><button>Send</button><button id="settings-button">Dark</button>
+    </form>
+    <form id="settings">
+        <button id="return">Return</button>
+      <h1>Rasax</h1>
+      <button id="report">Report</button>
+      <button id="disconnect-button">Exit</button>
+    </form>
+
+    <div id="menubar" class="hidden">
+      <select id="menuDeroulant">
+        <option disabled selected>Choose an option</option>
+        <option value=1>Report Message</option>
+        <option value=2>Report User</option>
+        <option value=3>Copy message</option>
+        <option value=4>Respond</option>
+      </select>
+    </div>
+
+    <form id="connect">
+        <input id="username" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button id="connect-button">Login</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/lite.js"></script>
+
+  </body>
+</html>

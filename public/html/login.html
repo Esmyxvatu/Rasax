@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    	<title>Rasax - Login</title>
+    	<link rel="stylesheet" href="css/login.css" id="theme">
+		<link rel="icon" type="image/png" href="img/triangle.png" />
+		<style>
+			body {
+				background-image: url("img/background.png");
+			}
+    	</style>
+    </head>
+    <body>
+		<form id="error" class="hidden"></form>
+        <form id="form" action="">
+        	<h1 id="title">Rasax</h1>
+        	<input id="username_input" placeholder="Username" autocomplete="off" />
+        	<input id="password_input" type="password" placeholder="Password" autocomplete="off" />
+        	<label><input id="remember_me" type="checkbox" autocomplete="off"> Remember me</label>
+        	<div id="buttons">
+        	    <button id="lbuttons">Login</button><button id="cabuttons">Create Account</button>
+        	</div>
+        	<p id="versions">v 0.1.7 - Rasax</p>
+    	</form>
+	<script src="/socket.io/socket.io.js"></script>
+    <script src="js/login.js"></script>
+
+  </body>
+</html>
